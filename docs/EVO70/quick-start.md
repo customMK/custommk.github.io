@@ -1,6 +1,6 @@
-# Quick start guide
+# Quick Start Guide
 
-## Plugging in your keyboard
+## Plugging in Your keyboard
 
 First things first, after removing EVO70 from the box, grab your favorite USB-C cable and plug one end into your computer and the other end into EVO70. This should immediately power on your keyboard, including the OLED screen which will feature the customMK logo as a splash screen.
 
@@ -19,7 +19,7 @@ At this point, I will assume you've now set the underglow and backlight to match
 Unplug your keyboard before proceeding.
 
 
-## Disassembling the case
+## Disassembling the Case
 
 It is necessary to disassemble the case to install stabilizers, and it is easier to test all the switch locations from the bottom of the PCB (which is exposed when the case is disassembled). To disassembled the case, remove the hex keys (a.k.a. Allen wrenches) from the small hardware bag that was in your EVO70 box. One of the hex keys should fit nicely in the case screws located around the perimeter of EVO70. Unscrew the eight perimeters screws, either from top side or the bottom side. My apologies if you find some of the screws to be a bit tight; I asked the assemblers to do the final tighening gently by hand (instead of electric screwdriver) but they apparently didn't get the memo this time.
 
@@ -28,7 +28,7 @@ Once you've gotten eight case screws removed, you should be able to see the love
 To separate the PCB from the switch plate, you will also find it necessary to remove the knob from the encoder. To do this, use the same hex key (allen wrench) as you used on the case screws. On the side of the encoder knob you will find a small hole with a set screw inside of it; this is where the hex key goes. **Just a fraction of a turn to loosen the set screw is all that should be needed.** I don't recommend removing the set screw from the knob completely, both because it is unnecessary to do so, and because the set screw is very tiny and can get lost easily.
 
 
-## VIA setup
+## VIA Setup
 
 Now is a good time to ensure we have VIA set up to work with EVO70. EVO70 is preprogrammed to work with VIA, but VIA...well, it's proprietary, closed-source software, which they update at their own pace. It will likely take several months from now (April 2022) before VIA automatically recognizes EVO70. In the meantime, we have to "tell" VIA what an EVO70 is, every time we open up VIA. (Yes, it is annoying and frustrating, and we may switch to Vial in the future to solve that problem). To teach VIA what an EVO70 is, we simply import a small text file (called a JSON file) which describes the EVO70 layout. It's just a simple, harmless text file, you can open it up in a file editor to have a look if your'e curious. [Here](https://raw.githubusercontent.com/customMK/custommk.github.io/master/docs/EVO70/evo70_via.json) is the JSON file you need; right click, download and save it somewhere convenient.
 
@@ -53,7 +53,11 @@ then unfortunately, your board has a hardware problem, probably with a bad solde
 
 At this point, you should have a known good EVO70 PCB, congratulations! At this point, unplug the PCB, adding stabilizers, reassemble the case, and then add switches and keycaps.
 
-## Flashing new firmware
+## Installing the Rubber Feet
+
+There are three large rubber feet included in the box with your EVO70. With a little bit of squishing, they will pop snugly into the three holes in the EVO70 base. The feet are very durable; there is no need to be timid when inserting them. 
+
+## Flashing new Firmware
 
 Sometimes for various reasons you may wish to flash new firmware onto EVO70. These reasons may include:
 -You customized the firmware in QMK and want to load new firmware, perhaps to customize the splash screen logo
