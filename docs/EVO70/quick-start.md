@@ -62,11 +62,11 @@ In any case, first step is to get EVO70 in bootloader mode. A great way to do th
 
 ## Customizing the splash screen
 
-This is a "to do" item. I have ideas for how to make this easy (without a full recompile of QMK firmware) but it's not done yet. Until then the only viable option to do it yourself is to download and install QMK, swap out customMK logo graphic for your own, and recompile. Not great, not terrible....but not as easy as we'd prefer it to be, in any case. 
+This is a "to do" item. I have ideas for how to make this easy (without a full recompile of QMK firmware) but it's not done yet. Until then the only viable option to do it yourself is to download and install QMK, swap out customMK logo graphic for your own, and recompile. Not great, not terrible....but not as easy as we'd prefer it to be, in any case. You will find the splash green graphic assigned to the "splash" variable [here](https://github.com/customMK/qmk_firmware/blob/evo70/keyboards/custommk/evo70/evo70.c)
 
 In the interim, if you've got a monochrome 128x32 image all ready to go, I may choose to accomodate reasonable requests for firmware with a custom splash screen, just in case you find compiling QMK to be intimidating. No guarantees if you go this route (because it may easily become too overwhelming for me to keep up), please be patient, and please make this as easy for me as possible by using [image2cpp](https://javl.github.io/image2cpp/) to prepare the image using the steps below:
 
-- create monochrome 128x32 image (technically this step is optional, image2cpp can convert to monochrome and rescale if needed, but if you want the most control over how this is done, use image editing software)
+- create a monochrome 128x32 image (technically this step is optional, image2cpp can convert to monochrome and rescale if needed, but if you want the most control over how this is done, use image editing software)
 - upload the resulting image to image2cpp
 - set the canvas size to 128x32 (required)
 - make sure the preview looks **exactly** like what you want for the splash screen
