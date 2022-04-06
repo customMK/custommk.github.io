@@ -1,0 +1,3 @@
+# Coming soon...
+
+We're in the process of setting up this documentation, please visit our [discord server](https://discord.gg/mGTq3wRQdx) with any questions in the meantime
