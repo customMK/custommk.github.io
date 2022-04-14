@@ -60,10 +60,11 @@ There are three large rubber feet included in the box with your EVO70. With a li
 ## Flashing new Firmware
 
 Sometimes for various reasons you may wish to flash new firmware onto EVO70. These reasons may include:
--You customized the firmware in QMK and want to load new firmware, perhaps to customize the splash screen logo
--You want to use VIAL instead of VIA
--Somehow your firmware went missing or is corrupted
--You have an inexplicable affinity for flashing firmware
+
+- You customized the firmware in QMK and want to load new firmware, perhaps to customize the splash screen logo
+- You want to use VIAL instead of VIA
+- Somehow your firmware went missing or is corrupted
+- You have an inexplicable affinity for flashing firmware
 
 In any case, first step is to get EVO70 in bootloader mode. A great way to do this is to remove your spacebar; underneath the spacebar is a small button; pressing that button sends the keyboard directly into bootloader mode. If you have QMK toolbox, it should recoginze the USB bootloader and be ready for you to flash new firmware. Because of the use of EEPROM, in QMK Toolbox it is generally a good idea to first press "Clear EEPROM" (and disregard the "FAIL" message) before pressing "Flash" (whch should report "Success").
 
