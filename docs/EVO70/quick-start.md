@@ -65,7 +65,19 @@ Sometimes for various reasons you may wish to flash new firmware onto EVO70. The
 -Somehow your firmware went missing or is corrupted
 -You have an inexplicable affinity for flashing firmware
 
-In any case, first step is to get EVO70 in bootloader mode. A great way to do this is to remove your spacebar; underneath the spacebar is a small button; pressing that button sends the keyboard directly into bootloader mode. If you have QMK toolbox, it should recoginze the USB bootloader and be ready for you to flash new firmware.
+In any case, first step is to get EVO70 in bootloader mode. A great way to do this is to remove your spacebar; underneath the spacebar is a small button; pressing that button sends the keyboard directly into bootloader mode. If you have QMK toolbox, it should recoginze the USB bootloader and be ready for you to flash new firmware. Because of the use of EEPROM, in QMK Toolbox it is generally a good idea to first press "Clear EEPROM" (and disregard the "FAIL" message) before pressing "Flash" (whch should report "Success").
+
+If your order number is CMK-1462 or lower and your order shipped in April 2022, it is highly recommended to flash new firmware, as there were some findings post-shipment arising from the late addition of Bongo Cat. The newer firmware offers better OLED on/off control, more control over backlight breathing, correction to encoder assignment in VIA, and the ability to remember the OLED state and backlight breathing even after unplugging EVO70.
+
+Here are two versions of VIA-compatible firmware you can upgrade to. The first one includes Bongo Cat, whereas the second one includes scroll wheel capability. The scroll wheel feature uses the "mouse keys" capabilities which does not fit in the firmware if Bongo Cat is present.
+
+[EVO70 firmware with Bongo Cat](https://raw.githubusercontent.com/customMK/custommk.github.io/master/docs/EVO70/custommk_evo70_via_bongo.hex)
+
+[EVO70 firmware with scroll wheel](https://raw.githubusercontent.com/customMK/custommk.github.io/master/docs/EVO70/custommk_evo70_via_scroll.hex)
+
+
+If you decide to compile EVO70 firmware from scratch, please be aware that we found and fixed a bug in QMK, and so as of this writing (April 14, 2022) [there exists a pull request for this patch](https://github.com/qmk/qmk_firmware/pull/16770) (relating to backlight breathing). This patch does not exist in the EVO70 branch/pull request because the patch is for core QMK code, and QMK requires separate pull requests for core features vs keyboards. Until QMK maintainers accept the pull request, the patch must be merged manually.
+
 
 ## Customizing the splash screen
 
