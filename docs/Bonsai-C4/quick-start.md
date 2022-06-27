@@ -10,7 +10,7 @@ Bonsai C4 microcontroller runs on 3.3V. This means the VCC pin is 3.3V on Bonsai
 
 Additionally, the RGB LEDs expect incoming signals to be 5V as well. Since the Bonsai C4 microcontroller can only output 3.3V, we included a single pin (A10) that bumps the 3.3V up to 5V specifically for this purpose. You'll need to wire the A10_5V pin to the "RGB data in" pin location (and omit the header pin there as well).
 
-The ProMicro microcontroller has built-in pullup resistances that work for I2C and half-duplex communications, whereas the STM32F chip in Bonsai C4 does not include these resistances. Thus, pullup resistors need to be added which connect I2C and serial data lines to 3.3V (through a resistance of about 5k to 10k). For some boards the keyboard PCB includes a place to install this pull up resistor (like Ergodash resistor R1), whereas for other keyboards (like Sofle, Corne, and Kyria) it may be easiest to wire up the pull up resistors directly on Bonsai C4.
+The ProMicro microcontroller has built-in pullup resistances that work for I2C and half-duplex communications, whereas the STM32F chip in Bonsai C4 does not include these resistances. Thus, pullup resistors need to be added which connect I2C and serial data lines to 3.3V (through a resistance of about 5k to 10k). For some boards the keyboard PCB includes a place to install this pull up resistor (like Ergodash resistor R2), whereas for other keyboards (like Sofle, Corne, and Kyria) it may be easiest to wire up the pull up resistors directly on Bonsai C4.
 
 # Sofle, Corne, Kyria
 
@@ -20,7 +20,7 @@ Note that similar wiring applied for other STM32F ProMicro replacements as well,
 
 # Ergodash
 
-Ergodash includes a locations on the main PCBs to add pull up resistors for split communications. Simply install 10k resistors in the R1 locations on each Ergodash PCB.
+Ergodash includes a locations on the main PCBs to add pull up resistors for split communications. Simply install 10k resistors in the R2 locations on each Ergodash PCB.
 
 Ergodash does accomodate support for any I2C devices, so there is no need for any I2C pullup resistors to be installed.
 
