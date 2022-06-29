@@ -40,9 +40,9 @@ If VIA still doesn't recognize EVO70, then there is a problem of some kind. Perh
 
 ## Testing Switch Locations
 
-A **highly recommended** activity before beginning to install stabs, switches, and keycaps is to test each switch location. This is most easily done with a pair of metal tweezers, but really any conductive metal will do, even a paperclip or a spare mechanical switch works (but I would suggested taping down the stem of the switch so that it stays pressed). I recommend doing this from the bottom of the PCB simply because there is more surface area to make contact with the hotswap metal.
+If VIA does recognize EVO70, we're ready to do some key testing. This is a **highly recommended** activity before beginning to install stabs, switches, and keycaps is to test each switch location. This is most easily done with a pair of metal tweezers, but really any conductive metal will do, even a paperclip or a spare mechanical switch works (but I would suggested taping down the stem of the switch so that it stays pressed). I recommend doing this from the bottom side of the PCB simply because there is more surface area to make contact with the hotswap metal.
 
-But if VIA does recognize EVO70, we're ready to do some key testing. At the top of VIA, select KEY TESTER, and then click the box for "Test Matrix" at the bottom. The layout on screen should match the EVO70 layout. Start testing each location by connecting across the metal contacts of each hotswap with the tweezers/switch/paperclip/etc. As you do this, each key should change color to show that it has been pressed. Once all switches have been tested (aside from those two switches shown in the top left of the layout), you've confirmed all switch locations are good, yay!!
+At the top of VIA, select KEY TESTER, and then click the box for "Test Matrix" at the bottom. The layout on screen should match the EVO70 layout. Start testing each location by connecting across the metal contacts of each hotswap with the tweezers/switch/paperclip/etc. As you do this, each key should change color to show that it has been pressed. Once all switches locations have been tested (aside from those two switches shown in the top left of the layout), you've confirmed all switch locations are good, yay!!
 
 If it turns out that you have an issue where 
 - a single switch isn't registering keypresses
@@ -51,11 +51,16 @@ If it turns out that you have an issue where
 
 then unfortunately, your board has a hardware problem, probably with a bad solder joint. Not to worry though, we can usually help fix it or replace it; contact us on Discord or over email, and we'll either handle it by sending you a shipping return label, or walk you through fixing it yourself (if you are comfortable attempting a repair by soldering...please let us know as it saves you time and saves us shipping costs!)
 
-At this point, you should have a known good EVO70 PCB, congratulations! At this point, unplug the PCB, adding stabilizers, reassemble the case, and then add switches and keycaps.
+At this point, you should have a known good EVO70 PCB, congratulations! At this point, you should unplug the PCB and add the stabilizers. Then reassemble the PCB to the switch plate, ensuring all six attachment points are fully screwed in from both the top and the bottom. It is recommended to insert switches into the switch plate and PCB with the PCB lying flat against a surface. This helps prevent the PCB from flexing away from the switch plate (which can bend pins and keep switches from making good electrical contact). Once all the switches are inserted, it is a good idea to plug in the PCB again and test to confirm all the switches are inserted propertly by conducting another switch test using VIA, but this time just by pressing on the switch stems. Once you've confirmed all switches respond as expected, finish reassembling the case and add the keycaps.
+
+If the final switch test reveals one or more problematic switches, here are some possible causes:
+- If a single switch is not responding but others around it are, the switch may have a bent pin or the switch may be defecting. Remove the switch, inspect for a bent pint. Straighten any bent pins, or replace the switch.
+- If straightening a bent pin or replacing a switch does not cause it to start working, it is possible that the hotswap came loose from the PCB. Inspect the back of the PCB in the switch location; if the hotswap is loose, you should be able to wiggle the metal piece of the hotswap slightly. The fix for this is to solder the hotswap in place; contact us if you need help with this.
+- If several switches in an area are all not responding, it often means that the PCB in that area is too far away from the switch plate. This can happen if the screws holding the PCB and switch plate together are not fully screwed in, or if a switch (usually with bent pins) is pushing the PCB away from the switch plate in the area. Remove the problematic switches, reinserting them one at a time, and use the VIA switch tester after inserting each switch to ensure switches are being inserted successfully.
 
 ## Installing the Rubber Feet
 
-There are three large rubber feet included in the box with your EVO70. With a little bit of squishing, they will pop snugly into the three holes in the EVO70 base. The feet are very durable; there is no need to be timid when inserting them. 
+There are three large rubber feet included in the box with your EVO70. With a little bit of squishing, they will pop snugly into the three holes in the EVO70 base. The feet are pretty durable; there is no need to be timid when inserting them. 
 
 ## Flashing new Firmware
 
@@ -77,12 +82,12 @@ Here are two versions of VIA-compatible firmware you can upgrade to. The first o
 [EVO70 firmware with scroll wheel](https://raw.githubusercontent.com/customMK/custommk.github.io/master/docs/EVO70/custommk_evo70_via_scroll.hex)
 
 
-If you decide to compile EVO70 firmware from scratch, please be aware that we found and fixed a bug in QMK, and so as of this writing (April 14, 2022) [there exists a pull request for this patch](https://github.com/qmk/qmk_firmware/pull/16770) (relating to backlight breathing). This patch does not exist in the EVO70 branch/pull request because the patch is for core QMK code, and QMK requires separate pull requests for core features vs keyboards. Until QMK maintainers accept the pull request, the patch must be merged manually.
-
+If you'd prefer to use Vial instead of VIA, Garbs#7637 on our Discord server created Vial firmware for EVO70. One amazing feature of Vial is that you never need to load a JSON file (since the keyboard stores that information internally). The firmware Garbs provides disables the per-key backlighting, but retains underglow (with limited modes), includes Bongo Cat, and enables the QMK settings menu in Vial:
+[EVO70 Vial firmware by Garbs](https://drive.google.com/file/d/193uHYtFOC7zEp4uPulkanuvZ_nH_SVBr/view?usp=sharing)
 
 ## Customizing the splash screen
 
-This is a "to do" item. I have ideas for how to make this easy (without a full recompile of QMK firmware) but it's not done yet. Until then the only viable option to do it yourself is to download and install QMK, swap out customMK logo graphic for your own, and recompile. Not great, not terrible....but not as easy as we'd prefer it to be, in any case. You will find the splash green graphic assigned to the "splash" variable [here](https://github.com/customMK/qmk_firmware/blob/evo70/keyboards/custommk/evo70/evo70.c)
+This is a "to do" item. I have ideas for how to make this easy (without a full recompile of QMK firmware) but it's not implemented. Unless/until that happens the only viable option to do it yourself is to download and install QMK, swap out customMK logo graphic for your own, and recompile. Not great, not terrible....but not as easy as we'd prefer it to be, in any case. You will find the splash green graphic assigned to the "splash" variable [here](https://github.com/customMK/qmk_firmware/blob/evo70/keyboards/custommk/evo70/evo70.c)
 
 In the interim, if you've got a monochrome 128x32 image all ready to go, I may choose to accomodate reasonable requests for firmware with a custom splash screen, just in case you find compiling QMK to be intimidating. No guarantees if you go this route (because it may easily become too overwhelming for me to keep up), please be patient, and please make this as easy for me as possible by using [image2cpp](https://javl.github.io/image2cpp/) to prepare the image using the steps below:
 
