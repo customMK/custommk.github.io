@@ -14,10 +14,11 @@ The last menu item is the illustrious Bongo cat. Get some metal tweezers or inst
 
 Whenever you install shift key, you will be able to hold down shift while clicking the encoder knob to traverse the menu in reverse.
 
-At this point, I will assume you've now set the underglow and backlight to match your desired mood, you've got some music playing and already used your encoder knob to perfectly adjust the volume, and you have a comfy hypoallergenic cat ready to keep you company. Quite simply, you have the perfect environment to start building your EVO70 keyboard.
+At this point, I will assume you've now set the underglow and backlight to match your desired mood, you've got some music playing playing in the background, and used your encoder knob to perfectly adjust the volume, and you have a comfy hypoallergenic OLED cat ready to keep you company. Quite simply, you have the perfect environment to start building your EVO70 keyboard.
 
-Unplug your keyboard before proceeding.
+Unplug your keyboard before proceeding. If you prefer to see a video overview of the assembly process, I highly recommend [this one](https://www.youtube.com/watch?v=ZvaERQcjjN4) by [Cojoc Duc](https://www.youtube.com/channel/UCHn1rPc0_peNq8eHFtSbOHA). And if you ultimately decide keyboard assembly isn't your cup of tea, there are plenty of folks who do commission builds--sometimes even on livestream; one such builder I highly recommend with extensive experience building customMK products is [The Board Father](https://www.youtube.com/channel/UCrzvOFl0guCluawgBueyGCg), also know as fraktur3#1553 on Discord who runs [8Bit Garage](https://discord.gg/kkfhaDN2gP)
 
+As you proceed with assembly, when in doubt, if you have any questions, feel free to drop by the [customMK Discord server](https://discord.gg/wyyw5WuEmQ) with any questions you may have.
 
 ## Disassembling the Case
 
