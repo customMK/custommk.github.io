@@ -6,7 +6,7 @@ First things first, after removing EVO70 R2 from the box (which we'll just refer
 
 ## Display Screens
 
-Take a moment to press on the encoder knob a few times (treat it like a switch) to cycle through the displays. One of the screens will be the Settings screen, with the default option selected of "Exit Settings". While on this screen, you can rotate the knob to access a variety of settings relevant to your keyboard, such as settings to adjust the lighting, settings date/time and formats, dimming of the LCD backlight (for LCD keyboards), etc. Get familiar with the available options, have some fun adjusting LED brightness and modes, things like that. Pretty easy, no? With EVO70, there is no need to memorize specific keys and layers to adjust your lighting settings; life is complicated enough already, and we believe that simple things should stay simple.
+Take a moment to press on the encoder knob a few times (treat it like a switch) to cycle through the displays. One of the screens will be the Settings screen, with the default option selected of "Exit Settings". While on this screen, you can rotate the knob to access a variety of settings relevant to your keyboard, such as adjusting the lighting, date/time and formats, dimming of the LCD backlight (for LCD keyboards), etc. Get familiar with the available options, have some fun adjusting LED brightness and modes, things like that. Pretty easy, no? With EVO70, there is no need to memorize specific keys and layers to adjust your lighting settings; life is complicated enough already, and we believe that simple things should stay simple.
 
 Do not bother setting the date or time just yet...that comes later.
 
