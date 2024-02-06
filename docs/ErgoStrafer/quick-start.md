@@ -10,7 +10,7 @@ If you wish to remap keys without a live internet connection, Vial can be downlo
 
 ## Special note regarding RGB ErgoStrafer
 
-VIA has not yet been fully updated to include RGB ErgoStrafers (but it is in progress). Thus, to use VIA with an RGB ErgoStrafers, you will currently need to load a simple text file that tells VIA about the RGB ErgoStrafer. This process is called "loading a JSON file" and the JSON file simply tells VIA which keys exist for this keyboard, what features are available (like RGB lighting settings), etc.
+VIA has not yet been fully updated to include RGB ErgoStrafer (but it is in progress). Thus, to use VIA with an RGB ErgoStrafer, you will need to load a simple text file that tells VIA about the RGB ErgoStrafer. This process is called "loading a JSON file" and the JSON file informs VIA which keys exist for this keyboard and what features are available (like RGB lighting).
 
 [Here](https://raw.githubusercontent.com/customMK/custommk.github.io/master/docs/ErgoStrafer/ergostrafer_rgb.json) is the JSON file you need for the RGB ErgoStrafer; right click, download and save it somewhere convenient.
 
