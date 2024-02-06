@@ -8,6 +8,14 @@ No drivers need to be installed, and no dedicated software needs to be installed
 
 If you wish to remap keys without a live internet connection, Vial can be downloaded and used instead of VIA, but due to underlying differences between the two, full compatibility with all features is not guaranteed.
 
+## Special note regarding RGB ErgoStrafer
+
+VIA has not yet been fully updated to include RGB ErgoStrafers (but it is in progress). Thus, to use VIA with an RGB ErgoStrafers, you will currently need to load a simple text file that tells VIA about the RGB ErgoStrafer. This process is called "loading a JSON file" and the JSON file simply tells VIA which keys exist for this keyboard, what features are available (like RGB lighting settings), etc.
+
+[Here](https://raw.githubusercontent.com/customMK/custommk.github.io/master/docs/ErgoStrafer/ergostrafer_rgb.json) is the JSON file you need for the RGB ErgoStrafer; right click, download and save it somewhere convenient.
+
+[This page](https://docs.cannonkeys.com/via-json-loading/) shows how you to upload the JSON file to VIA. Once that is complete, VIA should allow you to "Authorize Device" for an RGB ErgoStrafer.
+
 ## Key Remapping
 
 To change a key assignment, navigate to the "Configure" tab in VIA, select the key you wish to reassign, ensure "Keymap" is selected in the top left corner of the screen, and then choose the new key assignment from the list of keys at the bottom of the screen.
