@@ -4,17 +4,9 @@ ErgoStrafer is a mechanical keyboard replacement for the Merc Stealth gaming pad
 
 # VIA
 
-No drivers need to be installed, and no dedicated software needs to be installed to remap ErgoStrafer keys with VIA. To use VIA with ErgoStrafer, simply visit https://usevia.app using a Chrome (or Chromium-based) browser. Please note that VIA does not work with Safari or Firefox at this time, as these browsers do not support the WebHID interface. With your ErgoStrafer connected to your computer, click "Authorize Device" and select "ErgoStrafer" from the list of devices shown. This establishes the connection between VIA and your ErgoStrafer.
+No drivers need to be installed, and no dedicated software needs to be installed to remap ErgoStrafer keys with VIA. To use VIA with ErgoStrafer, simply visit https://usevia.app using a Chrome (or Chromium-based) browser. Please note that VIA does not work with Safari or Firefox at this time, as these browsers do not support the WebHID interface. With your ErgoStrafer connected to your computer, click "Authorize Device" and select "ErgoStrafer" or "ErgoStrafer RGB" as applicable from the list of devices shown. This establishes the connection between VIA and your ErgoStrafer.
 
-If you wish to remap keys without a live internet connection, Vial can be downloaded and used instead of VIA, but due to underlying differences between the two, full compatibility with all features is not guaranteed.
-
-## Special note regarding RGB ErgoStrafer
-
-VIA has not yet been fully updated to include RGB ErgoStrafer (but it is in progress). Thus, to use VIA with an RGB ErgoStrafer, you will need to load a simple text file that tells VIA about the RGB ErgoStrafer. This process is called "loading a JSON file" and the JSON file informs VIA which keys exist for this keyboard and what features are available (like RGB lighting).
-
-[Here](https://raw.githubusercontent.com/customMK/custommk.github.io/master/docs/ErgoStrafer/ergostrafer_rgb.json) is the JSON file you need for the RGB ErgoStrafer; right click, download and save it somewhere convenient.
-
-[This page](https://docs.cannonkeys.com/via-json-loading/) shows how you to upload the JSON file to VIA. Once that is complete, VIA should allow you to "Authorize Device" for an RGB ErgoStrafer.
+If you wish to remap keys without a live internet connection, you can find a downloadable version of VIA at https://github.com/the-via/releases/releases, or Vial can be used instead of VIA--but due to underlying differences between Vial and VIA, full compatibility with all features is not guaranteed.
 
 ## Key Remapping
 
